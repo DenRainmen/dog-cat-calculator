@@ -36,6 +36,12 @@ main {
     padding: 30px; /*  отступы для содержимого */
 }
 
+
+section{
+    display: inline-block;
+    text-align: left;
+}
+
 .btn {
     background-color: #e9399c;
     color: white;

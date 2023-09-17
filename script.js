@@ -6,11 +6,13 @@ function catRun() {
     
     main.innerHTML = `
     <h1>Сколько лет твоему питомцу?</h1>
+    <section class = "input-section">
     <p>Введите возраст кошки(только для кошек старше 3 лет)</p>
     <input class="petAge" type="text"  >
-    <input type="button" class="btnRes" value="Посчитать">
+    <input type="button" class="btn btnRes" value="Посчитать">
     <p>Возраст кошки в человеческих годах</p>
     <input class="humanAge" type="text" >
+    </section>
     <br>
     <br>
     
@@ -39,11 +41,13 @@ button.addEventListener('click', ageСalculation);
 function dogRun() {
     let main = document.querySelector('main');
     main.innerHTML = `<h1>Сколько лет твоему питомцу?</h1>
+    <section class = "input-section">
     <p>Введите возраст собаки</p>
     <input class="petAge" type="text" >
-    <input type="button" class="btnRes" value="Посчитать">
+    <input type="button" class="btn btnRes" value="Посчитать">
     <p>Возраст собаки в человеческих годах</p>
     <input class="humanAge" type="text" >
+    </section>
     <br>
     <br>
     <input type="button" class="btn" value="НАЗАД" onclick="location.reload()">`;
@@ -66,7 +70,7 @@ function dogRun() {
 
 function blindVer(){
     let body = document.querySelector("body");
-    body.style.fontSize = "160%";
+    body.style.fontSize = "130%";
 
     let bigText = document.getElementsByClassName("btn")
     for (let i = 0; i < bigText.length; i++) {
